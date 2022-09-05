@@ -8,9 +8,8 @@
 .page {
     background: #ffffff;
     color: var(--primary-color);
-    font-family: "roboto", ;
+    font-family: roboto, sans-serif;
     font-style: normal;
-    font-weight: 500;
     
 }
 
@@ -39,10 +38,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    
 }
-.link:hover, .link:focus, .link:active  {
+.current {
     color: var(--link-color);
 }
+.link:hover, .link:focus, .link:active {
+    color:var(--link-color); }
+
 
 .link-contact {
     color: var(--secondary-color);
@@ -55,14 +58,20 @@
     color: var(--link-color);
 }
 
+
 .hero {
     background-color:#2F303A;
-    color:#ffffff;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+   
     }
+.hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   color: #FFFFFF;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+}
 .hero-btn {
     font-family: inherit;
     background-color: var(--link-color);
@@ -72,41 +81,55 @@
     line-height: 1.87;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
-.features {
+.title-features {
+    color:var(--primary-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .text-features {
     color: #757575;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .title{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.17;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    
 }
 .team { 
     background-color: #F5F4FA;
 }
-.list-team {
-    background-color: #FFFFFF;
-    font-size: 16px;
+.list-team { 
+    background-color: #ffffff;
+
+}
+.title-team {
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 .text-team {
-    color: #757575;
-    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
     
 }
 .footer {
@@ -125,27 +148,33 @@
     font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF;
+    text-decoration: none;
+
 }
 .link-footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-     color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+}
+.title-portfolio {
+display: none
 }
 
-.filter {
+.filter-btn {
+    font-family: inherit;
+    background: #F5F4FA;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
-}
-.filter-btn {
-    font-family: inherit;
-    background: #F5F4FA;
-    border-radius: 4px;
+    border: none;
 }
 .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
     background-color:var(--link-color);;
@@ -159,7 +188,6 @@
 
 }
 .text-filter {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
